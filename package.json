@@ -1,0 +1,19 @@
+{
+  "name": "projet_notation_ipssi",
+  "version": "1.0.0",
+  "description": "Projet Notation Ipssi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevincourroux/projet_notation_ipssi.git"
+  },
+  "author": "Kévin COURROUX",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevincourroux/projet_notation_ipssi/issues"
+  },
+  "homepage": "https://github.com/kevincourroux/projet_notation_ipssi#readme"
+}
