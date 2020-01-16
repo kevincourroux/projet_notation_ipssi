@@ -1,0 +1,22 @@
+{
+    "prenom": [
+        "kevin",
+        "jack"
+    ],
+    "nom": [
+        "courroux",
+        "atacan"
+    ],
+    "email": [
+        "k.courroux@ecole-ipssi.net",
+        "test@test.fr"
+    ],
+    "password":[
+        "abcd",
+        "abcd"
+    ],
+    "role": [
+        "3",
+        "2"
+    ]
+}
