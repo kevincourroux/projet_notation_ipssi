@@ -8,6 +8,6 @@ module.exports = (app) => {
     .get(notesController.avg_of_note);
 
     app.route('/module/:module_id/etudiant_id/note')
-    .post(notesController.create_of_note);
+    .post(notesController.create_a_note);
   }
   

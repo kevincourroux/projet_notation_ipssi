@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 const notesModel = require('../models/notesModel');
-const Note = mongoose.model("Note");
+const Note = mongoose.model("Notes");
 
 exports.get_all_note = (req, res) => {
 
 	let params_query = {
-		etudiant_id: req.params.etudiant_id;
-		module_id: req.params.module_id;
+		etudiant_id: req.params.etudiant_id,
+		module_id: req.params.module_id
 	}
   Note.find(params_query, (error, note) => {
     if(error){
