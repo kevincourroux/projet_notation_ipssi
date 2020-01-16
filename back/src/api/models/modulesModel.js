@@ -12,11 +12,14 @@ let modulesSchema = new Schema({
       intervenants_id: {
         type: String
       },
-      created_at : {
+      start_at : {
         type: Date
       },
       end_at : {
         type: Date
+      },
+      created_at : {
+        type: Date.now
       }
 });
 
