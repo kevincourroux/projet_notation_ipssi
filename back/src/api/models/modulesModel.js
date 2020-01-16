@@ -9,7 +9,7 @@ let modulesSchema = new Schema({
       sessions_id: {
         type: String
       },
-      intervenants_id: {
+      user_id: {
         type: String
       },
       start_at : {
