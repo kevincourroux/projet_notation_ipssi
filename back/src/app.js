@@ -17,7 +17,13 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded( { extended: true } ));
 app.use(bodyParser.json())
 
+const sessionsRoute = require('./api/routes/sessionsRoute');
+const modulesRoute = require('./api/routes/modulesRoute');
 const userRoute = require('./api/routes/userRoute');
+const notesRoute = require('./api/routes/notesRoute');
+sessionsRoute(app);
+modulesRoute(app);
 userRoute(app);
+notesRoute(app);
 
 app.listen(port, hostname);
