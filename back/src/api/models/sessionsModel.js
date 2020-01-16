@@ -6,12 +6,12 @@ let sessionsSchema = new Schema({
         required: "Le nom de la promotion"
       },
       annee: {
-        type: Number,  min: 2000, max: 2050 
+        type: Number,  min: 2000, max: 2050,
         required: "Annee"
-      }
+      },
       created_at : {
         type: Date,
         default: Date.now
       }
 });
-module.exports = mongoose.model('Sessions', sessionsSchema);
+module.exports = mongoose.model('Session', sessionsSchema);
