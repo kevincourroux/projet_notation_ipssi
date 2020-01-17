@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kevincourroux/projet_notation_ipssi/issues"
   },
-  "homepage": "https://github.com/kevincourroux/projet_notation_ipssi#readme"
+  "homepage": "https://github.com/kevincourroux/projet_notation_ipssi#readme",
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
 }
