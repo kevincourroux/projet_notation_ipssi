@@ -65,7 +65,25 @@ exports.avg_of_note = (req, res) => {
       res.json(avg)
     }
   })
+  exports.sort_note = (req, res) => {
 
+    Note.find({module_id: req.params.module_id}, (error, notes) => {
+      if(error){
+        res.status(500);
+        console.log(error);
+        res.json({message: "Erreur serveur."});
+    }
+    else{  
+var copie = [];
+
+for (var i = 0; i < notes.length; i++) {
+  copie.push(notes[i]);
+}
+  copie.sort();
+        res.json(copie);
+      }
+    })
+  
 }
 
 
