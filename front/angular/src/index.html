@@ -1,13 +1,26 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Angular</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+<html>
+    <head>
+       <meta charset="utf-8">
+        <!-- importer le fichier de style -->
+    </head>
+    <body>
+        <div id="container">
+            <form>
+                <p> BIENVENUE! <br/>
+                Veuillez choisir le statut vous correspondant svp!</p>
+                <a href="./connexion_admin"> 
+                    <input type="bouton" value='ADMINISTRATEUR'/>
+                </a>
+
+                <a href="./connexion_etudiant"> 
+                    <input type="bouton" value='ETUDIANT'/>
+                </a>
+
+                <a href="./connexion_intervenant"> 
+                    <input type="bouton" value='INTERVENANT'/>
+                </a>
+   
+            </form> 
+        </div>
+    </body>
 </html>

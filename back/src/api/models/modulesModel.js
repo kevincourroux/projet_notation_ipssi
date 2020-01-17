@@ -19,7 +19,8 @@ let modulesSchema = new Schema({
         type: Date
       },
       created_at : {
-        type: Date.now
+        type: Date,
+        default: Date.now
       }
 });
 
