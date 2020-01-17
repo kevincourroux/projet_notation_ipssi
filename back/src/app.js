@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
 const hostname = '0.0.0.0';
@@ -16,6 +17,7 @@ mongoose.connect('mongodb://mongo/projet_notation_ipssi', mongooseParams); // do
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded( { extended: true } ));
 app.use(bodyParser.json())
+app.use(cors());
 
 const sessionsRoute = require('./api/routes/sessionsRoute');
 const modulesRoute = require('./api/routes/modulesRoute');
